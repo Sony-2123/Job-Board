@@ -1,0 +1,73 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none;}
+body{
+    background-color: aliceblue;
+}
+        .SONY{
+    width:100%;
+    height: 100%;
+    background:whitesmoke;
+    background-size: cover;
+    background-position: center;
+}
+.top{
+    width: 100%;
+    height: 100px;
+    background:(4, 121, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 150px;
+    background:white
+}
+
+.logo_area a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo_area a img{
+    width: 80px;
+    position: relative;
+    margin-left:-130px;
+    
+}
+.logo_area a h1{
+    color:skyblue;
+    text-transform:uppercase;
+    margin-left: 20px;
+
+}
+.menu_area ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu_area ul li{
+    position:relative;
+    padding: 50px;
+    font-size:larger
+}
+.menu_area ul li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: #00ffff;
+    bottom: -10px;
+    left: 0;
+    transition: .5s all ease-in-out;
+}
+.menu_area ul li:hover::after{
+    width: 100%;
+}
+.menu_area ul li a{
+    color:red;
+    font-family: lato;
+    font-size: 16px;
+    transition: 0.3s all ease-in-out;
+}
+.menu_area ul li a:hover{
+    color: #00ffff;
+}
